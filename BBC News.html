@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BBC News</title>
+	<style type="text/css">
+		.page-align{
+			width: 1300px;
+			margin:0 auto;
+		}
+		a{
+			text-decoration: none;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: Helvetica, Arial, freesans, sans-serif;
+		}
+		.top-menu{
+			width: 1400px;
+			height: 40px;
+			margin: 0 auto;
+
+
+}
+		.bbc-logo{
+			float: left;
+			position: relative;
+			width: 85px;
+			top: 8px;
+			border-right: 1px solid gray;
+			padding-right: 12px;
+		}
+		#persologo{
+		margin-left: 8px;
+		float: left;
+		height: 20px;
+		padding-top: 9px;
+		}
+		.sign-in{
+			float: left;
+			position: relative;
+			padding-top: 10px;
+			padding-left: 10px;
+			padding-right:100px;
+			border-right: 1px solid gray;
+			height: 25px;		}
+		.others{
+			float: left;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-right: 17px;
+			padding-left: 17px;
+			border-right: 1px solid gray;
+
+		}
+
+		.others:hover{
+			border-bottom:2.5px solid #007BC7;
+		}
+		.More-tab{
+			float: left;
+			margin: 10px ;
+			padding-right: 60px;
+
+		}
+		#more-icon{
+			float: left;
+			height: 15px;
+			padding-top: 12px;
+			padding-right: 17px;
+			padding-bottom: 12px;
+			border-right: 1px solid gray;
+		}
+		.Search-box{
+			margin-top: 8px;
+			margin-bottom: 8px;
+			margin-left: 15px;
+			padding-top: 3px;
+			padding-left: 3px;
+			padding-bottom: 3px;
+			border-style: none;
+			background-color: #E4E4E4;
+			float: left;
+		}
+		.search-icon{
+			float: left;
+			height: 22px;
+			margin-top: 8px;
+		}
+		.link{
+			text-decoration: none;
+		}
+		.top-menu a:visited{
+			color:black;
+		}
+		.top-menu a {
+			color: black;
+		}
+		.clear{
+			clear: both;
+		}
+		.second-container{
+			height: 95px;
+			width: 1300px;
+			background-color: #BB1919;
+		}
+		.news-word{
+
+			font-size: 60px;
+			color: white;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-right: 5px;
+		}
+		.all{
+			float: left;
+			border-right: 1px solid gray;
+			padding: 0 10px;
+			font-size: 15px;
+			font-family: bold;
+			color: white;
+
+
+		}
+		.all:hover{
+			border-bottom: 3px solid white;
+		}
+
+		.first-article{
+			width: 510px;
+			float: left;
+			padding-right: 10px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+
+
+		}
+		.article-img{
+			width: 510px;
+		}
+		.h1-title{
+			font-size: 30px;
+
+		}
+		.time-img{
+			width: 18px;
+			float: left;
+		}
+		.time{
+			float: left;
+			padding-top: 1px;
+			margin-top: -0.0000000001px;
+			padding: 0px 10px;
+			color: gray;
+			border-right: 1px solid #BB1919;
+
+		}
+		.chategory{
+			float: left;
+			padding-top: 1px;
+			padding-left: 10px;
+			margin-top: -0.0000000001px;
+		}
+		.right-container{
+			width: 250px;
+			float: left;
+			padding-right: 10px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+
+		}
+		.h1-container-title{
+			font-size: 15px;
+
+		}
+		.right-container-img{
+			width: 250px;
+		}
+		.right-container-aligned{
+			float: right;
+			margin-left: -250px;
+			position: relative;
+		}
+		.tech1{
+			border-bottom: 3px solid #BB1919;
+			padding-bottom: 5px;
+			font-size: 35px;
+		}
+		.margined-container{
+			margin-top: 20px;
+		}
+		.red-ribon{
+
+			position: absolute;
+			z-index: -20;
+			background-color: #BB1919;
+			height: 95px;
+			width: 100%;
+			margin-top: 40px;
+
+		}
+		.group{
+			float: left;
+			width: 249px;
+			padding-right: 11px;
+			margin-top: 10px;
+
+		}
+		.group a{
+
+			color: black;
+
+		}
+		.add-titles{
+			font-size: 17px;
+		}
+		.Watch-Listen{
+			font-size: 30px;
+		}
+		.i-frame-hr{
+			height: 0px;
+			width: 83%;
+			float: right;
+			margin-right: 15px;
+			margin-top: 18px;
+		}
+		.around-hr{
+			width: 79%;
+			float: right;
+			margin-right: 15px;
+			margin-top: 18px;
+		}
+		.i-frame-hr-2{
+			height: 0px;
+			width: 75%;
+			float: right;
+			margin-right: 15px;
+			margin-top: 18px;
+		}
+		.iframe-title{
+			padding-top: 50px;
+			padding-bottom: 20px;
+		}
+		.iframes{
+		 margin-left: 9px;
+
+		}
+
+		.i-frames-text-1{
+			width: 249px;
+			float: left;
+		}
+
+
+		.i-frames-text{
+			width: 249px;
+			float: left;
+			margin-left: 13px;
+		}
+		.bottom-hr{
+
+			position: relative;
+			top: 30px;
+
+
+		}
+		.a-style{
+			text-decoration: none;
+			color :white;
+
+		}
+		.a-style:visited{
+			text-decoration: none;
+			color :black;
+
+		}
+
+		.a-style:hover{
+			text-decoration: underline;
+			color: #1380A1;
+		}
+		.third-news-container{
+			width: 55%;
+			margin: 0 auto;
+
+		}
+		.update-time{
+			margin-top: 10px;
+			color: gray;
+		}
+		.last-ubdated-h3{
+			font-size: 20px;
+			margin-top: -7px;
+		}
+		.third-news-container img{
+
+			 height: 150px;
+			 width:268px;
+			 float: left;
+			 padding-right: 16px;
+		}
+		.updates-layers-p{
+			font-size: 16px;
+			color:
+		}
+		.read-more-btn{
+			padding: 6px 12px ;
+			border: 1px solid gray;
+
+		}
+		.new-source{
+			font-size: 13px;
+			color: gray;
+		}
+		.social-media-container{
+			padding-right: 75px;
+			float: left;
+		}
+		.social-media-hr{
+			width: 100px;
+			transform: rotate(-90deg);
+			margin-top: 50px;
+			float: left;
+		}
+		.dily-news{
+			float: left;
+			width: 250px;
+			padding:0px 10px;
+		}
+		.p-news{
+			font-size: 13px;
+		}
+		.Information{
+			float: left;
+			width: 250px;
+			margin-top: -20px;
+			padding:0px 10px;
+
+		}
+		.bottom-container-1{
+			background-color: #2F2F2F;
+			height: 110px;
+		}
+		.bbc-services{
+			color: white;
+			padding-top: 15px;
+		}
+		.bottom-img{
+			float: left;
+
+		}
+		.p-fotter{
+			float: left;
+			margin-top: 9px;
+			color: white;
+			padding: 0px 12px;
+		}
+		.Services-list{
+			width: 320px;
+			float: left;
+		}
+
+		.p-fotter:hover{
+			text-decoration: underline;
+		}
+		.footer-h2{
+			padding-top: 25px;
+			color: white;
+		}
+		.footer-div{
+			background-color: #4C4C4C;
+			margin-top: -20px;
+			height: 100%;
+		}
+		.footer-list-div{
+			width: 216.666px;
+			height: 112px;
+			color: white;
+			font-size: 13px;
+		}
+		.list{
+			display: flex;
+		}
+		.footer-list-div-1{
+			width: 216.666px;
+			height: 122px;
+			color: white;
+			font-size: 13px;
+			border-left: 1px solid gray;
+			padding-left: 20px;
+		}
+		.footer-list-div-2{
+			width: 216.666px;
+			height: 95px;
+			color: white;
+			font-size: 13px;
+			border-left: 1px solid gray;
+			padding-left: 20px;
+		}
+
+		.footer-div a:visited{
+			text-decoration: none;
+			color: white;
+		}
+		hr{
+			border-color: gray;
+		}
+		.list a{
+			color: white;
+		}
+		.list a:hover{
+			text-decoration: underline;
+		}
+		li{
+			list-style: none;
+			display: inline;
+			font-size:13px;
+			padding: 0 12px;
+		}
+		li{
+			color: white;
+			text-decoration: none;
+		}
+		li:hover{
+			text-decoration: underline;
+		}
+		li:first-child{
+			margin-left: -51px;
+		}
+		.footer-information{
+			color: white;
+
+		}
+		.footer-information a:hover{
+			text-decoration: underline;
+
+		}
+		.right-container a{
+
+			color: black;
+
+		}
+		.third-news-container a{
+			color: gray;
+		}
+		.a-style {
+			color: black;
+		}
+		.p-title a {
+			color: gray;
+		}
+		.end-link  {
+			color: white;
+			text-decoration: none;
+		}
+		.list-style-a{
+			text-decoration: none;
+			color: white;
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<div class="red-ribon" ></div>
+	<div class="page-align"  >
+
+	<div class="top-menu" >
+		<a href="https://www.bbc.com/"><img class="bbc-logo"  src="image/bbc-logo.png" ></a>
+
+		<a href="https://account.bbc.com/signin" target="_blank" ><img  src="image/personicon.png" id="persologo"></a>
+
+		<a href="https://account.bbc.com/signin" target="_blank"><span class="sign-in link " ><b>Sign in</b></span></a>
+
+		<a href="https://www.bbc.com/" target="_blank"><span class="others link" ><b>Home </b></span></a>
+
+		<a href="https://www.bbc.com/news" target="_blank"><span class="others link" ><b>News</b></span></a>
+
+		<a href="https://www.bbc.com/sport" target="_blank"><span class="others link" ><b>Sport</b></span></a>
+
+		<a href="https://www.bbc.com/weather" target="_blank"><span class="others link" ><b>Weather</b></span></a>
+
+		<a href="https://www.bbc.com/shop" target="_blank"><span class="others link" ><b>Shop</b></span></a>
+
+		<a href="reel" target="_blank"><span class="others link" ><b>Reel</b></span></a>
+
+		<a href="https://www.bbc.com/travel" target="_blank"><span class="others link" ><b>Travel</b></span></a>
+
+		<a href="https://www.bbc.com/capital" target="_blank"><span class="others link" ><b>Capital</b></span></a>
+
+		<a href="https://www.bbc.com/news#orb-footer" target="_blank"><span class="More-tab link" ><b>More</b></span></a>
+
+		<a href="" target="_blank"><img id="more-icon"  src="image/more.png"></a>
+
+		<input type="text" class="Search-box" placeholder="Search" name="">
+
+		<img class="search-icon" src="image/search-icon.png">
+
+	</div>
+
+	<div class="clear" >
+
+				<div class="second-container">
+					<span class="news-word" >
+						<b>News</b>
+
+					</span>
+							<div class="container-2-list" >
+
+								<a href="https://www.bbc.com/news" ><span class="all" >Home</span></a>
+								<a href="https://www.bbc.com/news/video_and_audio/headlines"><span class="all" >Video</span></a>
+								<a href="https://www.bbc.com/news/world"><span class="all" >World</span></a>
+								<a href="https://www.bbc.com/news/uk"><span class="all" >Uk</span></a>
+								<a href="https://www.bbc.com/news/business"><span class="all" >Business</span></a>
+								<a href="https://www.bbc.com/news/technology"><span class="all" >Tech</span></a>
+								<a href="https://www.bbc.com/news/science_and_environment"><span class="all" >Sciene</span></a>
+								<a href="https://www.bbc.com/news/stories"><span class="all" >Stories</span></a>
+								<a href="https://www.bbc.com/news/stories"><span class="all" >Entertainmnt & Artist</span></a>
+								<a href="https://www.bbc.com/news/health"><span class="all" >Health</span></a>
+								<a href="https://www.bbc.com/news/world_radio_and_tv"><span class="all" >World News TV</span></a>
+								<a href="https://www.bbc.com/news/in_pictures"><span class="all" >In pictures</span></a>
+								<a href="https://www.bbc.com/news/topics/cp7r8vgl2rgt/reality-check"><span class="all" >Reality Check</span></a>
+								<a href="https://www.bbc.com/news/newsbeat"><span class="all" >Newsbeat</span></a>
+
+							 </div>
+
+			</div><br>
+			<span class="tech1" >Tech</span>
+		<div class="clear margined-container " >
+
+			<div class="first-article" >
+
+			 			 	<a href="https://www.bbc.co.uk/news/technology-48688359" class="a-style" target="_blank"  >
+				<img src="image/Screenshot_2.png" class="article-img" ></a>
+			 			 	<a href="https://www.bbc.co.uk/news/technology-48688359" class="a-style" target="_blank"  >
+				<h1 class="h1-title" >Facebook urged to pause  currency project</h1>
+			</a>
+				<p class="p-title" >A US lawmaker asks Facebook to wait before launching its digital currency,hours afterit ewas announced.</p>
+				<img src="image/Screenshot_1.png" class="time-img"  >
+				<p class="time" >16h</p>
+			 			 	<a href="https://www.bbc.com/news/technology" class="a-style" target="_blank"  >
+
+				<p class="chategory" >Technology</p>
+							</a>
+			</div>
+			<div class="right-container" >
+			 			 	<a href="https://www.bbc.co.uk/news/technology-48692383" class="a-style" target="_blank"  >
+
+					<img src="image/Screenshot_3.png" class="right-container-img"  >
+
+					<h1 class="h1-container-title" >Facebook 'mysteriously locks out Hungarian users'</h1>
+							</a>
+
+					<p class="right-p-title" >
+						The social network has disabled a large number of accounts in error, according to reports.
+					</p>
+					<img src="image/Screenshot_1.png" class="time-img"  >
+					<p class="time" >3h</p>
+			 			 	<a href="https://www.bbc.com/news/technology" class="a-style" target="_blank"  >
+					<p class="chategory" >Technology</p>
+							</a>
+
+				</div>
+
+				<div class="right-container" >
+			 			 	<a href="https://www.bbc.co.uk/news/uk-48687743" class="a-style" target="_blank"  >
+
+
+					<img src="image/Screenshot_4.png" class="right-container-img"  >
+
+					<h1 class="h1-container-title" >Gambiling ads banned from Looney Tunes</h1>
+							</a>
+
+					<p class="right-p-title" >
+						The game - considered  appealing ti under 18s - gave players the chance to earn "gems" by ...
+					</p>
+					<img src="image/Screenshot_1.png" class="time-img"  >
+					<p class="time" >6h</p>
+			 			 	<a href="" class="a-style" target="_blank"  >
+					<p class="chategory" >uk</p>
+								</a>
+				</div>
+				<div class="right-container" >
+			 			 	<a href="https://www.bbc.co.uk/news/technology-48688353" class="a-style" target="_blank"  >
+
+
+					<img src="image/Screenshot_5.png" class="right-container-img"  >
+
+					<h1 class="h1-container-title" >China loses ground in supercomputer list</h1>
+							</a>
+
+					<p class="right-p-title" >
+						There are slightly fewer Chinese Machines, and some more US ones, in the list of top super...
+					</p>
+					<img src="image/Screenshot_1.png" class="time-img"  >
+					<p class="time" >6h</p>
+			 			 	<a href="https://www.bbc.com/news/technology" class="a-style" target="_blank"  >
+
+					<p class="chategory" >Technology</p>
+							</a>
+
+				</div>
+				<div class="right-container-aligned" >
+				<div class="right-container" >
+			 			 	<a href="https://www.bbc.co.uk/programmes/p070vfww" class="a-style" target="_blank"  >
+
+
+					<img src="image/Screenshot_6.png" class="right-container-img"  >
+
+					<h1 class="h1-container-title" >Are we addicte to the 'like' button ?</h1></a>
+
+					<p class="right-p-title" >
+						Social media companies know approval can ve addictive, so how should we manage the ...
+					</p>
+					<img src="image/Screenshot_1.png" class="time-img"  >
+					<p class="time" >6h</p>
+
+			 			 	<a href="" class="a-style" target="_blank"  >
+					<p class="chategory" >Technology</p></a>
+
+				</div>
+				<div class="right-container" >
+			 			 	<a href="https://www.bbc.co.uk/news/technology-48675203" class="a-style" target="_blank"  >
+
+
+					<img src="image/Screenshot_28.png" class="right-container-img"  >
+
+					<h1 class="h1-container-title" >US-Russia calsh over power grid 'hack attacks'</h1>
+				</a>
+
+					<p class="right-p-title" >
+						Russia has countered attempts to hack into its infrastructuresn says Kremlin spokesman.					</p>
+					<img src="image/Screenshot_1.png" class="time-img"  >
+					<p class="time" >6h</p>
+			 			 	<a href="https://www.bbc.com/news/technology" class="a-style" target="_blank"  >
+					<p class="chategory" >Technology</p></a>
+
+				</div>
+				<div class="right-container" >
+
+			 			 	<a href="Samsung TVs should be regularly virus-checked, the company says" class="a-style" target="_blank"  >
+					<img src="image/Screenshot_29.png" class="right-container-img"  >
+
+					<h1 class="h1-container-title" >Samsung tells homes to virus-check TVs</h1>
+						</a>
+					<p class="right-p-title" >
+						The technology company tweeted its QLED-branded sets should be scanned once every few weeks.
+					</p>
+					<img src="image/Screenshot_1.png" class="time-img"  >
+					<p class="time" >6h</p>
+			 			 	<a href="https://www.bbc.com/news/technology" class="a-style" target="_blank"  >
+					<p class="chategory" >Technology</p>
+							</a>
+
+				</div>
+				</div>
+</div>
+
+			<div class="clear group"  >
+			 			 	<a href="https://www.bbc.co.uk/news/technology-48662813" class="a-style" target="_blank"  >
+
+					<img src="image/Screenshot_31.png">
+					<p class="add-titles" ><b>Porn troll lawer jailed for 14 years</b></p></a>
+
+
+			 </div>
+			 <div class=" group"  >
+			 			 	<a href="http://www.bbc.co.uk/news/blogs-trending-27518691" class="a-style" target="_blank"  >
+
+					<img src="image/Screenshot_32.png">
+					<p class="add-titles" ><b>Why Facebook wants to be money's future</b></p></a>
+
+
+			 </div>
+			 			 <div class=" group"  >
+			 			 	<a href="https://www.bbc.co.uk/news/technology-48662816" class="a-style" target="_blank"  >
+
+					<img src="image/Screenshot_33.png">
+					<p class="add-titles" ><b>Protests over hacker conference speaker</b></p></a>
+
+
+			 </div>
+			 			 <div class=" group"  >
+			 			 	<a href="https://www.bbc.co.uk/news/technology-48663203" class="a-style" target="_blank"  >
+
+
+					<img src="image/Screenshot_34.png">
+					<p class="add-titles" ><b>Instagram
+					 improve account recovery</b></p></a>
+
+
+			 </div>
+			 			 <div class=" group"  >
+			 			 	<a href="https://www.bbc.co.uk/news/business-48659005" class="a-style" target="_blank"  >
+
+
+					<img src="image/Screenshot_35.png">
+					<p class="add-titles" ><b>Huawei smartphone sales hit amid US curbs</b></p></a>
+
+
+			 </div>
+
+				<div class="clear iframe-title " >
+			 		<span class="Watch-Listen" ><b>Watch/Listen</b></span><hr class="i-frame-hr" >
+			 	</div>
+
+			 <div class="clear " >
+					<iframe  width="248" height="150;" src="https://www.youtube.com/embed/3P94Pd8r3G8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+
+					<iframe class=" iframes " width="248" height="150" src="https://www.youtube.com/embed/VNvzZfsC13o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<iframe class=" iframes " width="248" height="150" src="https://www.youtube.com/embed/p_dgvgpC8Nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<iframe class=" iframes " width="248" height="150" src="https://www.youtube.com/embed/9YXfQ-zKeWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<iframe class=" iframes " width="248" height="150" src="https://www.youtube.com/embed/oAbq6ObhEv8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			</div>
+			<div class="clear i-frames-text-1 " >
+			 			 	<a href="https://www.youtube.com/watch?v=3P94Pd8r3G8" class="a-style" target="_blank"  >
+
+
+				<p> <b> Robot taught to 'feel' objects by sight and other news</b></p>
+							</a>
+
+
+
+			  </div>
+			  	<div class=" i-frames-text " >
+			 			 	<a href="https://www.youtube.com/watch?v=VNvzZfsC13o" class="a-style" target="_blank"  >
+				<p> <b> The plane that can fly 600 miles on batteries alone</b></p>
+							</a>
+
+			  </div>
+			  	<div class=" i-frames-text " >
+			 			 	<a href="https://www.youtube.com/channel/UCFctpiB_Hnlk3ejWfHqSm6Q" class="a-style" target="_blank"  >
+				<p> <b> Pokemon Sword and Shield: Hands-on with Dynamax power</b></p>
+							</a>
+
+
+
+			  </div>
+			  	<div class=" i-frames-text " >
+			 			 	<a href="https://www.youtube.com/watch?v=9YXfQ-zKeWs" class="a-style" target="_blank"  >
+
+
+				<p> <b> Amazon executive Werner Vogels on the ethics of facial recognition</b></p>
+			</a>
+
+
+
+			  </div>
+			  	<div class=" i-frames-text " >
+			 			 	<a href="https://www.youtube.com/watch?v=oAbq6ObhEv8" class="a-style" target="_blank"  >
+
+
+				<p> <b> The robot that understands irony and other news</b></p>
+			</a>
+
+			</div>
+
+
+
+			<div class="clear iframe-title " >
+			 		<span class="Watch-Listen" ><b>Features & Analysis</b></span><hr class="i-frame-hr-2" >
+			 	</div>
+
+
+
+
+			<div class="clear group"  >
+			 			 	<a href="https://www.bbc.co.uk/news/business-48630656" class="a-style" target="_blank"  >
+
+					<img src="image/Screenshot_30.png" width="249">
+					<p class="add-titles" ><b>Why the age of electric flight is finally upon us</b></p>
+
+						</a>
+			 </div>
+			 <div class=" group"  >
+			 			 	<a href="https://www.bbc.co.uk/news/newsbeat-48673043" class="a-style" target="_blank"  >
+					<img src="image/Screenshot_36.png " width="249">
+					<p class="add-titles" ><b>'Instagram can't solve bullying on its own'</b></p>
+							</a>
+
+			 </div>
+			 			 <div class=" group"  >
+			 			 	<a href="https://www.bbc.co.uk/news/business-48661144" class="a-style" target="_blank"  >
+
+
+					<img src="image/Screenshot_37.png" width="249">
+					<p class="add-titles" ><b>How a struggling airline went soaring throught the cloud</b></p>
+							</a>
+
+			 </div>
+			 			 <div class=" group"  >
+			 			 	<a href="https://www.bbc.co.uk/news/business-48620704" class="a-style" target="_blank"  >
+
+					<img src="image/Screenshot_38.png" width="249">
+					<p class="add-titles" ><b>The super-tough drones and robots going where we can't</b></p>
+							</a>
+
+
+			 </div>
+			 			 <div class=" group"  >
+			 			 	<a href="https://www.bbc.co.uk/news/business-48271940" class="a-style" target="_blank"  >
+
+					<img src="image/Screenshot_39.png" width="249"   >
+					<p class="add-titles" ><b>How to cope with email overload</b></p>
+					</a>
+
+			 </div>
+
+			 <div class="clear" >
+
+			 	<hr class="bottom-hr" >
+
+			 </div>
+			</div>
+			<br><br><br>
+			<!--there is when the second container end-->
+
+			<div class="third-news-container "   >
+
+
+				<div class="last-ubdated-tag" >
+
+				<h2  >Latest Updates</h2>
+
+				</div>
+
+
+				<div class="updates-layers"  >
+
+			<p class="update-time" >13:52</p>
+				<h3 class="last-ubdated-h3" ><b>Us 'launched cuyber-attack on Iran weapons system'</b> </h3>
+				<a href="https://www.bbc.co.uk/news/world-us-canada-48735097" target="_blank"><img src="image/Screenshot_41.png "  ></a>
+				<p class="updates-layers-p"  >The hack targeted computers running rocket and missile launchers, sources tell US media outlets.</p><br>
+
+				<a href="https://www.bbc.co.uk/news/world-us-canada-48735097"target="_blank"><span class="read-more-btn" >Read more</span></a>
+
+
+
+
+				</div>
+
+				<div class="clear" >
+				<br><br><hr><br>
+				<p>4:21</p>
+				<h3 class="last-ubdated-h3" ><b>How gamming became the new telethon</b> </h3>
+				<a href="https://www.bbc.co.uk/news/business-46636842"target="_blank"><img src="image/Screenshot_42.png "  ></a>
+				<p  class="new-source" >Tom Gerken<br>BBCNews</p>
+				<p class="updates-layers-p"  >As Games Done Quick holds its 20th event, we explore how gamers raise millions for cahrity.</p><br>
+
+				<a href="https://www.bbc.co.uk/news/business-46636842"target="_blank"><span class="read-more-btn" >Read more</span></a>
+				</div>
+
+
+
+				<div class="clear" >
+				<br><br><hr><br>
+				<p class="" >2:46</p>
+				<h3 class="last-ubdated-h3" ><b>Sync or swim: How TV shows are breaking new bands</b> </h3>
+				<a href="https://www.bbc.co.uk/news/entertainment-arts-48718868"target="_blank"><img src="image/Screenshot_43.png "  ></a>
+				<p  class="new-source" >Mark Savage<br>BBC music reporter</p>
+				<p class="updates-layers-p"  >Who needs Top of the Pops when shows like Love Island and Killing Eve are putting songs in the chart?</p><br>
+
+				<a href="https://www.bbc.co.uk/news/entertainment-arts-48718868"target="_blank"><span class="read-more-btn" >Read more</span></a>
+				</div>
+
+				<div class="clear" >
+				<br><br><hr><br>
+				<p class="" >21:30 22 Jun</p>
+				<h3 class="last-ubdated-h3" ><b>How social media reacted to US-Iran tensions</b> </h3>
+				<a href="https://www.bbc.co.uk/news/world-us-canada-48616760"target="_blank"><img src="image/Screenshot_44.png "  ></a>
+				<p  class="new-source" >Rozina Sini<br>BBC News</p>
+				<p class="updates-layers-p"  >How escalating tensions between the United States and Iran are being observed on social media.</p><br>
+
+				<a href="https://www.bbc.co.uk/news/world-us-canada-48616760"target="_blank"><span class="read-more-btn" >Read more</span></a>
+				</div>
+
+
+
+				<div class="clear" >
+				<br><br><hr><br>
+				<p class="" >8:01 22 Jun</p>
+				<h3 class="last-ubdated-h3" ><b>'Cyber element' in most police cases</b> </h3>
+				<a href="https://www.bbc.co.uk/news/uk-northern-ireland-48703072"target="_blank"><img src="image/Screenshot_45.png "  ></a>
+				<p class="updates-layers-p"  >A new PSNI cyber centre will deal with crimes ranging from fraud to murder investigations.</p><br>
+
+				<a href="https://www.bbc.co.uk/news/uk-northern-ireland-48703072"target="_blank"><span class="read-more-btn" >Read more</span></a>
+				</div>
+
+
+				<div class="clear" >
+				<br><br><hr><br>
+				<p class="" >4:29 22 Jun</p>
+				<h3 class="last-ubdated-h3" ><b>Takeaway app customers complain of fraud</b> </h3>
+				<a href="https://www.bbc.co.uk/news/uk-48719098"target="_blank"><img src="image/Screenshot_41.png "  ></a>
+				<p class="updates-layers-p"  >Deliveroo says its own systems have not been breached and passwords were obtained from another source.</p><br>
+
+				<a href="https://www.bbc.co.uk/news/uk-48719098"target="_blank"><span class="read-more-btn" >Read more</span></a>
+				</div>
+
+
+				<div class="clear" >
+				<br><br><hr><br>
+				<p class="" >3:10 22 Jun</p>
+				<h3 class="last-ubdated-h3" ><b>X-Prize winner: Children are not a product</b> </h3>
+				<a href="https://www.bbc.co.uk/news/technology-48723060" target="_blank"><img src="image/Screenshot_46.png "  ></a>
+				<p  class="new-source" >Dan Simmons<br>Click presenter</p>
+
+				<p class="updates-layers-p"  >The hack targeted computers running rocket and missile launchers, sources tell US media outlets.</p><br>
+
+				<a href="https://www.bbc.co.uk/news/technology-48723060"><span class="read-more-btn" >Read more</span></a>
+				</div>
+
+
+				<div class="clear" >
+				<br><br><hr><br>
+				<p class="" >23:33 21 Jun</p>
+				<h3 class="last-ubdated-h3" ><b>Slack: Why is this money-loser worth $20bn?</b> </h3>
+				<a href="https://www.bbc.com/news/technology-48723060?intlink_from_url=https://www.bbc.com/news/technology&link_location=live-reporting-story" target="_blank"><img src="image/Screenshot_47.png "  ></a>
+				<p  class="new-source" >Russell Hotten<br>BBC News</p>
+
+				<p class="updates-layers-p"  >The messaging app has investors piling in on hopes it can replace email for workplace communication.</p><br>
+
+				<a href="https://www.bbc.com/news/technology-48723060?intlink_from_url=https://www.bbc.com/news/technology&link_location=live-reporting-story"  target="_blank"><span class="read-more-btn" >Read more</span></a>
+				</div>
+				</div>
+				<!--there is where the fourth cintainer start-->
+
+
+					<br>
+				<div class="clear iframe-title " >
+			 		<span class="Watch-Listen" ><b>Around the BBC</b></span><hr class="around-hr" >
+			 	</div><br>
+
+
+
+
+
+
+
+			<div class="first-article" >
+
+			 			 	<a href="http://www.bbc.com/future/story/20190617-the-light-triad-that-can-make-you-a-good-person" class="a-style" target="_blank"  >
+				<img src="image/Screenshot_49.png" class="article-img" ></a>
+			 			 	<a href="http://www.bbc.com/future/story/20190617-the-light-triad-that-can-make-you-a-good-person" class="a-style" target="_blank"  >
+				<h1 class="h1-title" >The traits that make you a good person</h1>
+			</a>
+				<a href="http://www.bbc.com/future" class="a-style" target="_blank"  ><p class="p-title" >BBC Future</p></a>
+			</div>
+			<div class="right-container" >
+			 			 	<a href="http://www.bbc.com/capital/story/20190621-chinas-influencer-incubator" class="a-style" target="_blank"  >
+
+					<img src="image/Screenshot_50.png" class="right-container-img"  >
+
+					<h1 class="h1-container-title" >The talent scouts for influencers" </h1>
+							</a>
+
+					<a href="http://www.bbc.com/capital" class="a-style" target="_blank"  ><p class="right-p-title" >
+						BBC Capital
+					</p></a>
+
+				</div>
+
+				<div class="right-container" >
+			 			 	<a href="http://www.bbc.com/travel/story/20190623-the-us-island-that-speaks-elizabethan-english" class="a-style" target="_blank"  >
+
+
+					<img src="image/Screenshot_51.png" class="right-container-img"  >
+
+					<h1 class="h1-container-title" >Where people speak Elizabeth English</h1>
+							</a>
+
+					<a href="http://www.bbc.com/travel" class="a-style" target="_blank"  ><p class="right-p-title" >
+						BBC Travel
+					</p></a>
+				</div>
+				<div class="right-container" >
+			 			 	<a href="http://www.bbc.com/culture/story/20190623-why-janet-jackson-is-pops-most-underrated-legend" class="a-style" target="_blank"  >
+
+
+					<img src="image/Screenshot_52.png" class="right-container-img"  >
+
+					<h1 class="h1-container-title" >Pop's mot underrated legend?</h1>
+							</a>
+
+					<a href="http://www.bbc.com/Culture" class="a-style" target="_blank"  ><p class="right-p-title" >
+						BBC Culture
+					</p></a>
+
+				</div>
+				<div class="right-container-aligned" >
+				<div class="right-container" >
+			 			 	<a href="http://www.bbc.com/earth/story/20160826-why-our-ancestors-drilled-holes-in-each-others-skulls" class="a-style" target="_blank"  >
+
+
+					<img src="image/Screenshot_53.png" class="right-container-img"  >
+
+					<h1 class="h1-container-title" >The puzzle of ancient</h1></a>
+
+					<a href="http://www.bbc.com/earth"  ><p class="right-p-title" >
+						BBC Earth
+					</p></a>
+
+
+
+				</div>
+				<div class="right-container" >
+			 			 	<a href="http://www.bbc.com/future/story/20190619-how-your-looks-shape-your-personality" class="a-style" target="_blank"  >
+
+
+					<img src="image/Screenshot_54.png" class="right-container-img"  >
+
+					<h1 class="h1-container-title" >How your looks shape your personality </h1>
+				</a>
+
+					<a href="http://www.bbc.com/future" class="a-style" target="_blank"  ><p class="right-p-title" >BBC Future</p></a>
+
+				</div>
+				<div class="right-container" >
+
+			 			 	<a href="" class="a-style" target="_blank"  >
+					<img src="image/Screenshot_55.png" class="right-container-img"  >
+
+					<h1 class="h1-container-title" >Why are people drinking 'raw water'?</h1>
+						</a>
+					<a href="http://www.bbc.com/capital" class="a-style" target="_blank"  ><p class="right-p-title" >
+						BBC Capital
+					</p></a>
+
+				</div>
+				</div>
+
+				<div class="clear iframe-title " >
+			 		<span class="Watch-Listen" ><b>Find us here</b></span><hr class="i-frame-hr" >
+			 	</div>
+
+			 	<div class="social-media-container" >
+
+
+			 		<a href="https://twitter.com/BBCWorld" target="_blank"  ><img src="image/twitter.png"></a>
+
+			 		<a href="https://www.facebook.com/bbcnews" target="_blank"  ><img src="image/facebook.png"></a>
+
+			 		<a href="https://www.instagram.com/bbcnews" target="_blank"  ><img src="image/instagram.png"  ></a>
+
+
+
+
+			 	</div >
+			 	<hr class="social-media-hr" >
+			 	<div  class="dily-news" >
+
+			 		<img src="image/dailynews.png"><br>
+			 		<a href="" class="a-style" target="_blank"  > <p class="p-news" ><b>Get news from the BBC in your inbox each weekday morning</b></p> </a>
+
+			 	</div>
+			 	<div  class="dily-news" >
+			 	<img src="image/Screenshot_56.png"><br>
+			 		<a href="" class="a-style" target="_blank"  > <p class="p-news" ><b>Find out more about our BBC News App</b></p> </a>
+
+			 	</div>
+
+
+
+
+			 	<div  class="Information" >
+			 		<p>Email us at <b>ahveyouray@bbc.co.uk</b></p>
+			 		<p>Send an SMS or MMS to <b>+44 7624 800100</b></p>
+			 		<p>Follow <b>Have Your Say on Twitter</b></p>
+			 		<p><b>Why you can trust BBC News</b></p>
+			 	</div>
+
+</div>
+
+
+				<div class="bottom-container-1 clear " >
+
+					<div class="page-align"  >
+
+
+						<div class="bottom-services" >
+							<h2 class="bbc-services"  ><b>BBC News Services</b></h2>
+						</div>
+
+							<div class="Services-list" >
+						<img src="image/Screenshot_57.png" width="25px" height="35px" class="bottom-img" >
+						<a href="https://www.bbc.co.uk/news/10628994" target="_blank" ><p class="p-fotter" ><b>On your mobile</b></p></a>
+							</div>
+
+							<div class="Services-list" >
+						<img src="image/Screenshot_58.png" width="40px" height="35px" class="bottom-img" >
+						<a href="https://www.bbc.com/news/help-17655000" target="_blank"  ><p class="p-fotter" ><b>On your connected tv</b></p></a>
+							</div>
+
+							<div class="Services-list" >
+						<img src="image/Screenshot_59.png" width="30px" height="35px" class="bottom-img" >
+						<a href="https://www.bbc.co.uk/news/10628323" target="_blank"  ><p class="p-fotter" ><b>Get new alerts</b></p></a>
+							</div>
+
+							<div class="Services-list" >
+						<img src="image/Screenshot_60.png" width="40px" height="35px" class="bottom-img" >
+						<a href="https://www.bbc.co.uk/news/20039682" target="_blank"  ><p class="p-fotter" ><b>Contact BBC News</b></p></a>
+							</div>
+
+
+					</div>
+				</div>
+
+			<div class="footer-div"  >
+				<div class="page-align">
+					<h2 class="footer-h2">Explore the BBC</h2>
+
+<div class="list" >
+
+					<div class="footer-list-div" >
+						<a href="https://www.bbc.com/" target="_blank"   ><p>Home</p></a>
+						<a href="https://www.bbc.com/travel/" target="_blank"   ><p>Travel</p></a>
+						<a href="https://www.bbc.com/culture/" target="_blank"   ><p>CBeebies</p></a>
+						<a href="https://www.bbc.co.uk/news/localnews" target="_blank"   ><p>Local</p></a>
+
+
+					</div>
+
+
+					<div class="footer-list-div-1" >
+						<a href="https://www.bbc.com/news" target="_blank"   ><p>News</p></a>
+						<a href="https://www.bbc.com/capital/" target="_blank"   ><p>Capital</p></a>
+						<a href="https://www.bbc.co.uk/food/" target="_blank"   ><p>Food</p></a>
+						<a href="https://www.bbc.co.uk/tv/" target="_blank"   ><p>TV</p></a>
+
+
+					</div>
+
+
+					<div class="footer-list-div-1" >
+						<a href="https://www.bbc.com/sport" target="_blank"   ><p>Sport</p></a>
+						<a href="https://www.bbc.com/culture/" target="_blank"   ><p>Culture</p></a>
+						<a href="https://www.bbc.com/bitesize" target="_blank"   ><p>Bitesize</p></a>
+						<a href="https://www.bbc.co.uk/radio/" target="_blank"   ><p>Radio</p></a>
+
+
+					</div>
+
+
+
+					<div class="footer-list-div-1" >
+						<a href="https://www.bbc.com/weather" target="_blank"   ><p>Weather</p></a>
+						<a href="https://www.bbc.com/future/" target="_blank"   ><p>Future</p></a>
+						<a href="https://www.bbc.co.uk/arts/" target="_blank"   ><p>Arts</p></a>
+						<a href="https://www.bbc.co.uk/bbcthree" target="_blank"   ><p>Three</p></a>
+
+
+					</div>
+
+
+					<div class="footer-list-div-2" >
+						<a href="https://shop.bbc.com/" target="_blank"   ><p>Shop</p></a>
+						<a href="https://www.bbc.co.uk/sounds" target="_blank" ><p>Sounds</p></a>
+						<a href="https://www.bbc.co.uk/taster" target="_blank" ><p>Taster</p></a>
+						<a href="askdjakjsdksd.com"></a>
+
+
+					</div>
+
+
+
+					<div class="footer-list-div-2" >
+						<a href="https://www.bbc.com/reel/" target="_blank"   ><p>Reel</p></a>
+						<a href="https://www.bbc.co.uk/cbbc" target="_blank"   ><p>CBBC</p></a>
+						<a href="https://www.bbc.com/nature/" target="_blank"   ><p>Nature</p></a>
+
+
+					</div>
+</div>
+<br><hr>
+					<ul class="bottom-list" >
+					 	<li  ><a class="list-style-a" href="https://www.bbc.co.uk/usingthebbc/terms/" target="_blank" >Terms of Use</a></li>
+					 	<li  ><a class="list-style-a" href="https://www.bbc.co.uk/aboutthebbc" target="_blank" >About the BBC</a></li>
+					 	<li  ><a class="list-style-a" href="https://www.bbc.co.uk/usingthebbc/privacy/" target="_blank" >Privacy Policy</a></li>
+					 	<li  ><a class="list-style-a" href="https://www.bbc.co.uk/usingthebbc/cookies/" target="_blank" >Cookies</a></li>
+					 	<li ><a  class="list-style-a" href="https://www.bbc.co.uk/accessibility/" target="_blank" >Accessinility Help</a></li>
+					 	<li  ><a class="list-style-a" href="https://www.bbc.co.uk/guidance" target="_blank" >Parental Guidance</a></li>
+					 	<li  ><a class="list-style-a" href="https://www.bbc.co.uk/contact" target="_blank" >Contact the BBC</a></li>
+					 	<li  ><a class="list-style-a" href="https://www.bbc.co.uk/bbcnewsletter" target="_blank" >Get personalised Newsletters</a></li>
+					 	<li ><a  class="list-style-a" href="https://advertising.bbcworldwide.com/" target="_blank" >Advertise with us</a></li>
+					 	<li  ><a class="list-style-a" href="https://www.bbc.com/usingthebbc/cookies/how-does-the-bbc-use-cookies-for-advertising/" target="_blank" >Ad choices</a></li>
+
+					</ul>
+
+					<small class="footer-information" ><em><strong>Copyright © 2019 BBC.</strong></em> The BBC is not responsible for the content of external sites.<b><a href="https://www.bbc.co.uk/help/web/links/"  ><span class="end-link" > Read about our approach to external linking.</span  ></a></b></small>
+
+				</div>
+</body>
+</html>
